@@ -6,7 +6,7 @@ const port = 3000;
 
 app.use(express.json());
 
-app.get('/', (req, res) => {
+app.get('/post', (req, res) => {
     console.log(req.query);
     console.log(req.body);
 
