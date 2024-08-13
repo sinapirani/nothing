@@ -9,8 +9,7 @@ app.use(express.json());
 app.get('/post', (req, res) => {
     console.log(req.query);
     console.log(req.body);
-
-    res.send('ok')
+    res.send(req.query["hub.challenge"])
 })
 
 app.post('/post', (req, res) => {
